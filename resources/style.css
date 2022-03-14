@@ -1,0 +1,361 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap')
+}
+
+/* --------------------- Universal Styles ------------------------------ */
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Cambria, Georgia, 'Times New Roman', Times, serif;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: 'Bebas Neue';
+    letter-spacing: 0.25rem;
+    margin: 0 2rem;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+/* -------------------------- Header ----------------------------------- */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 68px;
+    background: lightgoldenrodyellow;
+    border-bottom: 2px solid slategrey;
+    box-sizing: content-box;
+}
+
+.title {
+    display: none;
+    font-family: 'Bebas Neue';
+    font-size: 3rem;
+    margin: 0.5rem 1rem 0;
+}
+
+.logo {
+    font-family: 'Bebas Neue';
+    font-size: 3rem;
+    margin: 6px 10px 0;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.125rem;
+    padding: 10px;
+    width: 180px;
+}
+
+a:hover {
+    color: goldenrod;
+    background-color: white;
+    border: 1px solid lightslategrey;
+    border-radius: 10px;
+}
+
+a:active {
+    font-size: 1.25rem;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+/* ---------------------------- Main ----------------------------------- */
+main {
+    width: 100%;
+    position: relative;
+    top: 68px;
+    background-color: lightgrey;
+}
+
+/* --------------------------- Banner ---------------------------------- */
+.banner {
+    background-image: url('../resources/images/cheeseWheelsBanner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 35rem;;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-content {
+    font-family: 'Bebas Neue';
+    font-size: 2rem;
+    background-color: lightgrey;
+    width: 100%;
+    padding-top: 0.5rem;
+    word-spacing: 1rem;
+    letter-spacing: 0.25rem;
+    opacity: 0.9;
+}
+
+.banner-content h1 {
+    margin: 0 2rem;
+}
+
+/* ------------------------------ Info --------------------------------- */
+.info {
+    background-color: #fff;
+    display: flex;
+    align-items: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    border: 2px solid slategrey;
+    border-top: none;
+    width: 60%;
+    max-width: 900px;
+    margin-bottom: 2.5rem;
+}
+
+.info p {
+    padding: 1rem 3rem;
+    min-width:350px;
+    max-width: 900px;
+
+}
+
+/* ----------------------- Cheeses of the Month ------------------------ */
+.cheeses-of-the-month {
+    width: 100%;
+    margin: 0 auto 2.5rem;
+}
+
+.cotm-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cheese {
+    width: 25%;
+    min-width: 400px;
+    max-width: 450px;
+    margin: 0 2rem 2rem;;
+    flex-grow: 1;
+    flex-shrink: 0;
+
+}
+
+.cheese img {
+    width: 480px;
+    height: 320px;
+    max-width: 100%;
+    padding: 1rem;
+    border: 2px solid slategrey;
+    border-radius: 10px;
+}
+
+.cheese p {
+    padding: 0.5rem 1.5rem;
+}
+
+/* ---------------------------- Producers ------------------------------ */
+.producers {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+}
+
+.producers-content { 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.producer {
+    width: 30%;
+    max-width: 500px;
+    min-width: 400px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.producer figure {
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+    flex-wrap: wrap;    
+}
+
+.producer figcaption {
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.producer img {
+    width: 360px;
+    height: 280px;
+    max-width: 100%;
+    padding: 1rem;
+}
+
+/* -------------------------------- Footer ----------------------------- */
+footer {
+    position: relative;
+    top: 68px;
+    padding-bottom: 1rem;
+}
+
+.newsletter > h5 {
+    font-size: 1.5rem;
+    font-family: 'Bebas Neue';
+    letter-spacing: 0.25rem;
+    margin-bottom: 0.5rem;
+    padding: 0.25rem;
+    text-align: center;
+}
+
+.newsletter form {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;    
+    padding-bottom: 2.5rem;
+}
+
+.newsletter form input {
+    padding: 0.25rem 1rem;
+    margin: 0.5rem 0.5rem;
+    width: 30%;
+}
+
+.newsletter form input:nth-child(4) {
+    padding: 0.25rem;
+    width: 40%;
+}
+
+footer h5 {
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+
+/* ----------------------- Media Queries ------------------------------- */
+@media only screen and (max-width: 950px) { 
+    a {
+        width: 130px;
+    }
+
+    a:hover {
+        color: #333;
+        background-color: lightgoldenrodyellow;
+        border: none;
+        border-radius: 10px;
+    }
+
+    a:active {
+        color: goldenrod;
+        font-size: 1.125rem;
+        background-color: white;
+        border: 1px solid lightslategrey;
+        border-radius: 10px;
+    }
+
+    .banner {
+        height: 32rem;
+    }
+
+    .info {
+        width: 80%;
+    }
+    
+    .newsletter form {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .newsletter form input {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .logo, 
+    header ul,
+    .banner-content {
+        display: none;
+    }
+
+    .title,
+    header img {
+        display: block;
+    }
+     
+    .banner {
+        height: 24rem;
+    }
+
+    .newsletter form input {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .banner {
+        height: 20rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+    .info {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .cheese {
+        min-width: 300px;
+        max-width: 350px;
+    }
+
+    .producer {
+        min-width: 300px;
+        max-width: 350px;
+    }
+}
