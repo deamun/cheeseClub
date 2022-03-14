@@ -14,7 +14,7 @@ The aim of this project is to create a responsive website for a fictional club.
 ---
 This project was created as part of Codecademy's Full-Stack Engineering path. The goal was to create a responsive wesbite for a fictional club.
 
-The site is hosted using GitHub Pages and can be viewed [here]().
+The site is hosted using GitHub Pages and can be viewed [here](https://deamun.github.io/cheeseClub/).
 
 ## Technologies Used
 ---
